@@ -10,7 +10,7 @@
 	<groupId>com.ouhamza</groupId>
 	<artifactId>dashboard</artifactId>
 
-	<version>1.2.0-SNAPSHOT</version>
+	<version>1.2.0</version>
 
 	<packaging>war</packaging>
 	<name>dashboard</name>
@@ -37,7 +37,7 @@
 		<connection>scm:git:git@github.com:ouhamzalhss/dashboard-application.git</connection>
 		<developerConnection>scm:git:git@github.com:ouhamzalhss/dashboard-application.git</developerConnection>
 		<url>git@github.com:ouhamzalhss/dashboard-application.git</url>
-		<tag>HEAD</tag>
+		<tag>v1.2.0</tag>
 	</scm>
 
 	<dependencies>
