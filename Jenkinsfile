@@ -28,11 +28,11 @@ node{
 	}
 
 	stage('Deploy'){
-	   sh 'curl -u jenkins:123456 -T target/**.war "http://localhost:7070/manager/text/deploy?path=/dashboard&update=true"'
+	   sh 'curl -u jenkins:123456 -T target/**.war "http://192.168.80.1:7070/manager/text/deploy?path=/dashboard&update=true"'
 	}
 
 	stage('Smoke Test'){
-	   sh "curl --retry-delay 10 --retry 5 http://localhost:7070/dashboard"
+	   sh "curl --retry-delay 10 --retry 5 http://192.168.80.1:7070/dashboard"
 	}
 
 }
