@@ -28,7 +28,7 @@ node{
 	}
 
 	stage('Deploy'){
-	   sh 'curl -u jenkins:jenkins -T target/**.war "http://localhost:7070/manager/text/deploy?path=/dashboard&update=true"'
+	   sh 'curl -u jenkins:123456 -T target/**.war "http://localhost:7070/manager/text/deploy?path=/dashboard&update=true"'
 	}
 
 	stage('Smoke Test'){
