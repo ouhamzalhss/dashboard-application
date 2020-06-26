@@ -8,9 +8,9 @@ node{
 
 	stage('Build'){
 	  if(isUnix()){
-	     sh "'${mvnHom}/bin/mvn' -Dmaven.test.failure.ignore clean package"
+	     sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
 	  }else{
-	     bat (/"${mvnHom}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+	     bat (/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
 	  }
 	}
 
@@ -21,9 +21,9 @@ node{
 
 	stage('Integration test'){
 	  if(isUnix()){
-	     sh "'${mvnHom}/bin/mvn' -Dmaven.test.failure.ignore clean verify"
+	     sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean verify"
 	  }else{
-	     bat (/"${mvnHom}\bin\mvn" -Dmaven.test.failure.ignore clean verify/)
+	     bat (/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean verify/)
 	  }
 	}
 
